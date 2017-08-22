@@ -40,13 +40,6 @@ public class MainView extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        appointmentButton = new javax.swing.JButton();
-        orderButton = new javax.swing.JButton();
-        paymentButton = new javax.swing.JButton();
-        productButton = new javax.swing.JButton();
-        serviceButton = new javax.swing.JButton();
-        clientButton = new javax.swing.JButton();
-        reportButton = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         logoutButton = new javax.swing.JButton();
@@ -56,7 +49,6 @@ public class MainView extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jdp = new javax.swing.JDesktopPane();
-        jLabel8 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -67,133 +59,18 @@ public class MainView extends javax.swing.JFrame {
 
         jPanel6.setLayout(null);
 
+        jLabel1.setBackground(new java.awt.Color(0, 153, 255));
         jLabel1.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Hello User");
         jPanel6.add(jLabel1);
         jLabel1.setBounds(0, 0, 230, 140);
 
-        appointmentButton.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
-        appointmentButton.setForeground(new java.awt.Color(35, 68, 179));
-        appointmentButton.setText("Appointment");
-        appointmentButton.setToolTipText("Add New,Search,Delete & Make Changes In Appointments");
-        appointmentButton.setBorder(javax.swing.BorderFactory.createCompoundBorder(null, new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED)));
-        appointmentButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        appointmentButton.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
-        appointmentButton.setIconTextGap(10);
-        appointmentButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                appointmentButtonActionPerformed(evt);
-            }
-        });
-        jPanel6.add(appointmentButton);
-        appointmentButton.setBounds(10, 200, 210, 50);
-
-        orderButton.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
-        orderButton.setForeground(new java.awt.Color(35, 68, 179));
-        orderButton.setText("Order");
-        orderButton.setToolTipText("Add New Orders(Cake Order,Sewing Order,Treatements,Wedding Arrangements)");
-        orderButton.setBorder(javax.swing.BorderFactory.createCompoundBorder(null, new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED)));
-        orderButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        orderButton.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
-        orderButton.setIconTextGap(15);
-        orderButton.setPreferredSize(new java.awt.Dimension(209, 62));
-        orderButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderButtonActionPerformed(evt);
-            }
-        });
-        jPanel6.add(orderButton);
-        orderButton.setBounds(10, 270, 209, 50);
-
-        paymentButton.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
-        paymentButton.setForeground(new java.awt.Color(35, 68, 179));
-        paymentButton.setText("Payment");
-        paymentButton.setToolTipText("Add Payments");
-        paymentButton.setBorder(javax.swing.BorderFactory.createCompoundBorder(null, new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED)));
-        paymentButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        paymentButton.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
-        paymentButton.setIconTextGap(20);
-        paymentButton.setPreferredSize(new java.awt.Dimension(209, 62));
-        paymentButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                paymentButtonActionPerformed(evt);
-            }
-        });
-        jPanel6.add(paymentButton);
-        paymentButton.setBounds(10, 340, 209, 50);
-
-        productButton.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
-        productButton.setForeground(new java.awt.Color(35, 68, 179));
-        productButton.setText("Product");
-        productButton.setToolTipText("Add New,Search,Delete Product & Make Changes In Stock");
-        productButton.setBorder(javax.swing.BorderFactory.createCompoundBorder(null, new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED)));
-        productButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        productButton.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        productButton.setIconTextGap(13);
-        productButton.setPreferredSize(new java.awt.Dimension(209, 62));
-        productButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                productButtonActionPerformed(evt);
-            }
-        });
-        jPanel6.add(productButton);
-        productButton.setBounds(10, 410, 209, 50);
-
-        serviceButton.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
-        serviceButton.setForeground(new java.awt.Color(35, 68, 179));
-        serviceButton.setText("Service");
-        serviceButton.setToolTipText("Add New");
-        serviceButton.setBorder(javax.swing.BorderFactory.createCompoundBorder(null, new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED)));
-        serviceButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        serviceButton.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
-        serviceButton.setIconTextGap(25);
-        serviceButton.setPreferredSize(new java.awt.Dimension(209, 62));
-        serviceButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                serviceButtonActionPerformed(evt);
-            }
-        });
-        jPanel6.add(serviceButton);
-        serviceButton.setBounds(10, 480, 209, 50);
-
-        clientButton.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
-        clientButton.setForeground(new java.awt.Color(35, 68, 179));
-        clientButton.setText("Client");
-        clientButton.setToolTipText("Add New ,Search,Delete Client & Make Changes In Client Details");
-        clientButton.setBorder(javax.swing.BorderFactory.createCompoundBorder(null, new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED)));
-        clientButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        clientButton.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
-        clientButton.setIconTextGap(25);
-        clientButton.setPreferredSize(new java.awt.Dimension(209, 62));
-        clientButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                clientButtonActionPerformed(evt);
-            }
-        });
-        jPanel6.add(clientButton);
-        clientButton.setBounds(10, 550, 209, 50);
-
-        reportButton.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
-        reportButton.setForeground(new java.awt.Color(35, 68, 179));
-        reportButton.setText("Others");
-        reportButton.setToolTipText("Important Reports About Business\n\n\n");
-        reportButton.setBorder(javax.swing.BorderFactory.createCompoundBorder(null, new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED)));
-        reportButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        reportButton.setHorizontalAlignment(javax.swing.SwingConstants.LEADING);
-        reportButton.setIconTextGap(25);
-        reportButton.setPreferredSize(new java.awt.Dimension(209, 62));
-        reportButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                reportButtonActionPerformed(evt);
-            }
-        });
-        jPanel6.add(reportButton);
-        reportButton.setBounds(10, 620, 209, 50);
-
-        jLabel5.setText("jLabel5");
+        jLabel5.setBackground(new java.awt.Color(0, 153, 255));
+        jLabel5.setOpaque(true);
         jPanel6.add(jLabel5);
-        jLabel5.setBounds(0, 0, 240, 720);
+        jLabel5.setBounds(0, 0, 230, 706);
 
         jPanel2.setLayout(null);
 
@@ -242,17 +119,12 @@ public class MainView extends javax.swing.JFrame {
 
         jdp.setBorder(new javax.swing.border.MatteBorder(null));
 
-        jLabel8.setFont(new java.awt.Font("Cambria", 3, 48)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(1, 1, 1));
-        jLabel8.setText("We Discover Your True Beauty...");
-        jdp.add(jLabel8);
-        jLabel8.setBounds(420, 500, 750, 60);
-
-        jLabel7.setFont(new java.awt.Font("Cambria", 3, 70)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Verdana", 0, 48)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(254, 254, 254));
-        jLabel7.setText("Welcome To C & C Beauty Salon...");
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("Welcome To Prundus Technologies");
         jdp.add(jLabel7);
-        jLabel7.setBounds(70, 30, 1110, 80);
+        jLabel7.setBounds(0, 0, 1200, 80);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -265,7 +137,9 @@ public class MainView extends javax.swing.JFrame {
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1370, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(229, 229, 229)
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jdp, javax.swing.GroupLayout.PREFERRED_SIZE, 2415, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, 0)
+                        .addComponent(jdp, javax.swing.GroupLayout.PREFERRED_SIZE, 1200, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -278,7 +152,9 @@ public class MainView extends javax.swing.JFrame {
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, 0)
                         .addComponent(jdp))
-                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 735, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 710, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(0, 0, 0))
         );
 
@@ -341,34 +217,6 @@ public class MainView extends javax.swing.JFrame {
         //lg_date.setText(dateAsString);
     }   
     
-    private void appointmentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_appointmentButtonActionPerformed
-
-    }//GEN-LAST:event_appointmentButtonActionPerformed
-
-    private void orderButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderButtonActionPerformed
-
-    }//GEN-LAST:event_orderButtonActionPerformed
-
-    private void paymentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paymentButtonActionPerformed
-
-    }//GEN-LAST:event_paymentButtonActionPerformed
-
-    private void productButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productButtonActionPerformed
-
-    }//GEN-LAST:event_productButtonActionPerformed
-
-    private void serviceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_serviceButtonActionPerformed
-
-    }//GEN-LAST:event_serviceButtonActionPerformed
-
-    private void clientButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clientButtonActionPerformed
-
-    }//GEN-LAST:event_clientButtonActionPerformed
-
-    private void reportButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reportButtonActionPerformed
-
-    }//GEN-LAST:event_reportButtonActionPerformed
-
     private void logoutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutButtonActionPerformed
 
     }//GEN-LAST:event_logoutButtonActionPerformed
@@ -409,14 +257,11 @@ public class MainView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton appointmentButton;
-    private javax.swing.JButton clientButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -425,11 +270,6 @@ public class MainView extends javax.swing.JFrame {
     private javax.swing.JLabel lgDate;
     private javax.swing.JLabel lgTime;
     private javax.swing.JButton logoutButton;
-    private javax.swing.JButton orderButton;
-    private javax.swing.JButton paymentButton;
-    private javax.swing.JButton productButton;
-    private javax.swing.JButton reportButton;
-    private javax.swing.JButton serviceButton;
     private javax.swing.JLabel stringDay;
     // End of variables declaration//GEN-END:variables
 }
