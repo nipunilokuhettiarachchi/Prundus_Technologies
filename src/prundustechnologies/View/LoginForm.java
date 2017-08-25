@@ -45,7 +45,7 @@ public class LoginForm extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         usernameText1 = new javax.swing.JTextField();
         passwordText = new javax.swing.JPasswordField();
-        LoginButton = new javax.swing.JButton();
+        LoginButton_1 = new javax.swing.JButton();
         CancelLoginButton = new javax.swing.JButton();
 
         usernameText.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
@@ -99,16 +99,16 @@ public class LoginForm extends javax.swing.JFrame {
         passwordText.setForeground(new java.awt.Color(255, 255, 255));
         passwordText.setToolTipText("Type Your Password Here");
 
-        LoginButton.setBackground(java.awt.Color.white);
-        LoginButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prundustechnologies/Images/login.png"))); // NOI18N
-        LoginButton.setBorder(null);
-        LoginButton.setBorderPainted(false);
-        LoginButton.setContentAreaFilled(false);
-        LoginButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        LoginButton.setFocusPainted(false);
-        LoginButton.addActionListener(new java.awt.event.ActionListener() {
+        LoginButton_1.setBackground(java.awt.Color.white);
+        LoginButton_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prundustechnologies/Images/login.png"))); // NOI18N
+        LoginButton_1.setBorder(null);
+        LoginButton_1.setBorderPainted(false);
+        LoginButton_1.setContentAreaFilled(false);
+        LoginButton_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        LoginButton_1.setFocusPainted(false);
+        LoginButton_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LoginButtonActionPerformed(evt);
+                LoginButton_1ActionPerformed(evt);
             }
         });
 
@@ -143,12 +143,10 @@ public class LoginForm extends javax.swing.JFrame {
                             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(usernameText1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                .addGap(0, 0, 0)
-                                .addComponent(passwordText, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(passwordText, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(52, 52, 52)
-                        .addComponent(LoginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(LoginButton_1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CancelLoginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(63, Short.MAX_VALUE))
@@ -167,7 +165,7 @@ public class LoginForm extends javax.swing.JFrame {
                     .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(LoginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LoginButton_1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(CancelLoginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -195,7 +193,7 @@ public class LoginForm extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_usernameText1ActionPerformed
 
-    private void LoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginButtonActionPerformed
+    private void LoginButton_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginButton_1ActionPerformed
         String username=usernameText1.getText();
 
         if(username.equals("")){
@@ -235,7 +233,7 @@ public class LoginForm extends javax.swing.JFrame {
             }
 
         }
-    }//GEN-LAST:event_LoginButtonActionPerformed
+    }//GEN-LAST:event_LoginButton_1ActionPerformed
 
     private void CancelLoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelLoginButtonActionPerformed
         usernameText1.setText("");
@@ -279,7 +277,7 @@ public class LoginForm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton CancelLoginButton;
-    private javax.swing.JButton LoginButton;
+    private javax.swing.JButton LoginButton_1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
