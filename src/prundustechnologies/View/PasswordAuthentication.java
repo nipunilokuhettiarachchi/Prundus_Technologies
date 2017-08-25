@@ -5,26 +5,20 @@
  */
 package prundustechnologies.View;
 
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.JOptionPane;
-import prundustechnologies.Controller.AppUserController;
-import prundustechnologies.Model.AppUser;
-
 /**
  *
  * @author Nipuni
  */
-public class LoginForm extends javax.swing.JFrame {
+public class PasswordAuthentication extends javax.swing.JFrame {
 
-    public static String USER="";
+    public static String USEREmail="";
     /**
-     * Creates new form LoginForm
+     * Creates new form PasswordAuthentication
      */
     
-    public LoginForm() {
+    public PasswordAuthentication() {
         initComponents();
+        LoginButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prundustechnologies/Images/login.png")));
         setLocationRelativeTo(null);
     }
 
@@ -45,7 +39,7 @@ public class LoginForm extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         usernameText1 = new javax.swing.JTextField();
         passwordText = new javax.swing.JPasswordField();
-        LoginButton_1 = new javax.swing.JButton();
+        LoginButton1 = new javax.swing.JButton();
         CancelLoginButton = new javax.swing.JButton();
 
         usernameText.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
@@ -75,7 +69,7 @@ public class LoginForm extends javax.swing.JFrame {
         jLabel4.setBackground(new java.awt.Color(0, 153, 255));
         jLabel4.setFont(new java.awt.Font("Verdana", 0, 16)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Username");
+        jLabel4.setText("E-Mail");
         jLabel4.setOpaque(true);
 
         jLabel5.setBackground(new java.awt.Color(0, 153, 255));
@@ -84,10 +78,12 @@ public class LoginForm extends javax.swing.JFrame {
         jLabel5.setText("Password ");
         jLabel5.setOpaque(true);
 
+        usernameText1.setEditable(false);
         usernameText1.setBackground(new java.awt.Color(102, 102, 102));
         usernameText1.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         usernameText1.setForeground(new java.awt.Color(255, 255, 255));
-        usernameText1.setToolTipText("Type Your Username Here");
+        usernameText1.setText("prunduswebsite@gmail.com");
+        usernameText1.setToolTipText("");
         usernameText1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usernameText1ActionPerformed(evt);
@@ -99,21 +95,20 @@ public class LoginForm extends javax.swing.JFrame {
         passwordText.setForeground(new java.awt.Color(255, 255, 255));
         passwordText.setToolTipText("Type Your Password Here");
 
-        LoginButton_1.setBackground(java.awt.Color.white);
-        LoginButton_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prundustechnologies/Images/login.png"))); // NOI18N
-        LoginButton_1.setBorder(null);
-        LoginButton_1.setBorderPainted(false);
-        LoginButton_1.setContentAreaFilled(false);
-        LoginButton_1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        LoginButton_1.setFocusPainted(false);
-        LoginButton_1.addActionListener(new java.awt.event.ActionListener() {
+        LoginButton1.setBackground(java.awt.Color.white);
+        LoginButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prundustechnologies/Images/login.png"))); // NOI18N
+        LoginButton1.setBorder(null);
+        LoginButton1.setBorderPainted(false);
+        LoginButton1.setContentAreaFilled(false);
+        LoginButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        LoginButton1.setFocusPainted(false);
+        LoginButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LoginButton_1ActionPerformed(evt);
+                LoginButton1ActionPerformed(evt);
             }
         });
 
         CancelLoginButton.setBackground(java.awt.Color.white);
-        CancelLoginButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prundustechnologies/Images/cancel.png"))); // NOI18N
         CancelLoginButton.setBorder(null);
         CancelLoginButton.setBorderPainted(false);
         CancelLoginButton.setContentAreaFilled(false);
@@ -141,15 +136,15 @@ public class LoginForm extends javax.swing.JFrame {
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
                             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(usernameText1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(passwordText, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(usernameText1)
+                            .addComponent(passwordText)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(52, 52, 52)
-                        .addComponent(LoginButton_1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(LoginButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(CancelLoginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(63, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -165,7 +160,7 @@ public class LoginForm extends javax.swing.JFrame {
                     .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(LoginButton_1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LoginButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(CancelLoginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -193,51 +188,12 @@ public class LoginForm extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_usernameText1ActionPerformed
 
-    private void LoginButton_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginButton_1ActionPerformed
-        String username=usernameText1.getText();
-
-        if(username.equals("")){
-            JOptionPane.showMessageDialog(LoginForm.this, "Please Enter Your Password", "Alert", JOptionPane.ERROR_MESSAGE);
-        }else{
-            try {
-                AppUser checkuser=AppUserController.confirmLogin(username);
-
-                if(checkuser !=null){
-                    String password=String.copyValueOf(passwordText.getPassword());
-                    String userPassword=checkuser.getPassword();
-
-                    //System.out.println(userPassword);
-
-                    if(userPassword.equals(password)){
-                        String checkuser1=AppUserController.getUserRole(userPassword);
-                        USER=checkuser1;
-                        //System.out.println(USER);
-                    }else{
-                        JOptionPane.showMessageDialog(LoginForm.this, "User is not exist in the system for the given password.Please Recheck Your password", "Alert", JOptionPane.ERROR_MESSAGE);
-
-                        if(JOptionPane.OK_OPTION==0){
-                            passwordText.setText(null);
-                        }
-                    }
-
-                }else{
-                    JOptionPane.showMessageDialog(LoginForm.this, "User is not exist in the system.Please Recheck Your password And Username", "Alert", JOptionPane.ERROR_MESSAGE);
-
-                    if(JOptionPane.OK_OPTION==0){
-                        usernameText1.setText(null);
-                        passwordText.setText(null);
-                    }
-                }
-            } catch (ClassNotFoundException | SQLException ex) {
-                Logger.getLogger(LoginForm.class.getName()).log(Level.SEVERE, null, ex);
-            }
-
-        }
-    }//GEN-LAST:event_LoginButton_1ActionPerformed
+    private void LoginButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginButton1ActionPerformed
+        
+    }//GEN-LAST:event_LoginButton1ActionPerformed
 
     private void CancelLoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelLoginButtonActionPerformed
-        usernameText1.setText("");
-        passwordText.setText("");
+        this.dispose();
     }//GEN-LAST:event_CancelLoginButtonActionPerformed
 
     /**
@@ -270,14 +226,14 @@ public class LoginForm extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new LoginForm().setVisible(true);
+                new PasswordAuthentication().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton CancelLoginButton;
-    private javax.swing.JButton LoginButton_1;
+    private javax.swing.JButton LoginButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
